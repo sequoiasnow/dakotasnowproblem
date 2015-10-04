@@ -1,0 +1,11 @@
+{
+  "name": "dakotasnowproblem",
+  "version": "1.0.0",
+  "description": "A theme designed by Sequoia Snow built for Dakota Snow's website",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sequoia Snow",
+  "license": "ISC"
+}

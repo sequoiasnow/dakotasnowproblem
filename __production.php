@@ -5,4 +5,4 @@ print 'Git Pull Complete';
 
 print '<br /><hr /><br />';
 
-shell_exec( 'gulp' )
+shell_exec( 'gulp' );

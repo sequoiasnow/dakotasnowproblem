@@ -17,6 +17,10 @@ gulp.task( 'styles', function() {
 
 // Automate the admin react compilation into a single file.
 gulp.task( 'js', function() {
+    gulp.src( 'src/js/libraries/*.js' )
+        .pipe(concat( 'libraries.js' ))
+        .pipe(gulp.dest( 'dist/js/' ));
+
     gulp.src( 'src/js/plugins/*.js' )
         .pipe(concat( 'plugins.js' ))
         .pipe(gulp.dest( 'dist/js/' ));
@@ -27,10 +31,6 @@ gulp.task( 'js', function() {
 
     gulp.src( 'src/js/pages/*.js' )
         .pipe(concat( 'pages.js' ))
-        .pipe(gulp.dest( 'dist/js/' ));
-
-    gulp.src( 'src/js/libraries/*.js' )
-        .pipe(concat( 'libraries.js' ))
         .pipe(gulp.dest( 'dist/js/' ));
 });
 

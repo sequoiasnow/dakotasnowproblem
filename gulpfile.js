@@ -30,7 +30,7 @@ gulp.task( 'js', function() {
         .pipe(gulp.dest( 'dist/js/' ));
 
     gulp.src( 'src/js/libraries/*.js' )
-        .pipe(concat( 'pages.js' ))
+        .pipe(concat( 'libraries.js' ))
         .pipe(gulp.dest( 'dist/js/' ));
 });
 
